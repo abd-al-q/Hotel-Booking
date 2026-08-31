@@ -52,7 +52,7 @@ nav {
   font-weight: 600;
   color: hsl(0, 0%, 55%);
 }
-h1 i {
+.head h1 i {
   color: hsl(15, 74%, 41%);
 }
 .buttons {
@@ -76,13 +76,16 @@ h1 i {
   border: 1.5px solid hsl(33, 15%, 15%);
 }
 .welcomeCard {
-  margin: 10px;
+  margin: 50px 20px;
   padding: 30px;
+  border-radius: 20px;
+  transform: rotateZ(2deg);
   color: #ffffff;
   background: linear-gradient(230deg, hsl(22, 72%, 56%) 0%, hsl(18,62%, 47%) 20%, hsl(15, 74%, 41%) 40%, hsl(15, 69%, 37%) 100%);
 }
 .mainWelcome {
   border-top: 1px dashed white; 
+  margin-bottom: 100px;
 }
 .sunDiv {
   width: 100%;
@@ -91,12 +94,19 @@ h1 i {
   justify-content: space-between;
   position: relative;
 }
-/*.sunDiv sun {
-  margin: 0;
-}*/
-.sunDiv p {
+.sunDiv p,
+.footWelcome p {
   font-size: 11px;
 }
-/*.mainWelcome .sun {
-  float: right;
-}*/
+.mainWelcome > h1 {
+  margin-bottom: 25px;
+}
+.mainWelcome > h3 {
+  margin-bottom: 10px;
+}
+h3 i {
+  color: hsl(44, 84%, 75%);
+}
+.footWelcome p {
+  margin-bottom: 10px;
+}

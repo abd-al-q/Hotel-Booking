@@ -1,1 +1,102 @@
-hiihv
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(30, 24%, 93%);
+}
+nav {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.sun {
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sun svg {
+  margin-right: 10px;
+}
+.sun p i {
+  color: hsl(22, 72%, 56%);
+  font-size: 16px;
+}
+.sun p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.svg-menu {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid hsl(29, 27%, 85%);
+}
+.head {
+  margin: 15px;
+}
+.head * {
+  margin-bottom: 10px;
+}
+.head p{
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(0, 0%, 55%);
+}
+h1 i {
+  color: hsl(15, 74%, 41%);
+}
+.buttons {
+  margin: 20px 0px;
+  display: flex;
+}
+.buttons button{
+  width: stretch;
+  height: 35px;
+  margin: 0 5px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+.buttons button:first-child {
+  background-color: inherit;
+  border: 1.5px solid hsl(29, 27%, 85%);
+}
+.buttons button:nth-of-type(2) {
+  color: white;
+  background-color: hsl(33, 15%, 15%);
+  border: 1.5px solid hsl(33, 15%, 15%);
+}
+.welcomeCard {
+  margin: 10px;
+  padding: 30px;
+  color: #ffffff;
+  background: linear-gradient(230deg, hsl(22, 72%, 56%) 0%, hsl(18,62%, 47%) 20%, hsl(15, 74%, 41%) 40%, hsl(15, 69%, 37%) 100%);
+}
+.mainWelcome {
+  border-top: 1px dashed white; 
+}
+.sunDiv {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/*.sunDiv sun {
+  margin: 0;
+}*/
+.sunDiv p {
+  font-size: 11px;
+}
+/*.mainWelcome .sun {
+  float: right;
+}*/

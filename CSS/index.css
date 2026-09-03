@@ -47,7 +47,9 @@ nav {
 .head * {
   margin-bottom: 10px;
 }
-.head p{
+.head p,
+.in p,
+.out p {
   font-size: 12px;
   font-weight: 600;
   color: hsl(0, 0%, 55%);
@@ -75,16 +77,20 @@ nav {
   background-color: hsl(33, 15%, 15%);
   border: 1.5px solid hsl(33, 15%, 15%);
 }
-.welcomeCard {
+.welcomeCard,
+.productCard {
   margin: 50px 20px;
   padding: 30px;
   border-radius: 20px;
-  transform: rotateZ(2deg);
+}
+.welcomeCard {
   color: #ffffff;
+  box-shadow: 0 3px 5px hsl(18,62%, 47%);
   background: linear-gradient(230deg, hsl(22, 72%, 56%) 0%, hsl(18,62%, 47%) 20%, hsl(15, 74%, 41%) 40%, hsl(15, 69%, 37%) 100%);
+  transform: rotateZ(2deg);
 }
 .mainWelcome {
-  border-top: 1px dashed white; 
+  border-top: 1px dashed hsl(26, 67%, 77%);; 
   margin-bottom: 100px;
 }
 .sunDiv {
@@ -109,4 +115,46 @@ h3 i {
 }
 .footWelcome p {
   margin-bottom: 10px;
+}
+.productCard {
+  color: black;
+  background-color: white;
+  transform: rotateZ(-2deg);
+}
+.productCard .head {
+  border-bottom: 1px dashed hsl(29, 27%, 85%); ;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.p-product {
+  margin-bottom: 5px;
+}
+.in-out {
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed hsl(29, 27%, 85%);;
+}
+.in,
+.out {
+  text-align: center;
+}
+.mainProduct h1 {
+  margin: 10px 0;
+}
+.solds {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.productPrice {
+  direction: rtl;
+}
+.solds p {
+  margin-top: 10px;
 }

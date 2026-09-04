@@ -56,7 +56,8 @@ nav {
 .head p,
 .in p,
 .out p,
-.footProduct p {
+.footProduct p 
+.feature .div2 p {
   font-size: 12px;
   font-weight: 600;
   color: hsl(0, 0%, 55%);
@@ -173,6 +174,9 @@ h3 i {
 .footProduct h2 {
   direction: rtl;
 }
+.productPrice {
+  font-weight: 100;
+}
 .solds p {
   margin-top: 10px;
 }
@@ -196,7 +200,7 @@ h3 i {
   font-size: 13px;
 } 
 .feature {
-  width: 345;
+  width: 345px;
   margin: 15px;
   margin-top: 0;
   padding: 20px 15px;
@@ -205,7 +209,10 @@ h3 i {
   border-radius: 15px;
   box-shadow: 0 6px 25px -14px #b5afaf;
 }
-.headArrival {
+.feature p:last-of-type:not(.headFeature p) {
+  color: hsl(33, 17%, 41%);
+}
+.headFeature {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -213,13 +220,15 @@ h3 i {
 .headArrival:not(img) {
   color: hsl(15, 74%, 41%);
 }
-.headArrival h2 {
+.headFeature h2 {
   margin-left: auto;
 }
-.headArrival img {
+.headFeature img {
   padding: 5px;
   border-radius: 7.5px;
   margin-right: 10px;
+}
+.headArrival img {
   background-color: hsl(15, 74%, 41%);
 }
 .date {
@@ -227,4 +236,52 @@ h3 i {
 }
 .date h2 {
   margin-bottom: 5px;
+}
+.headWifi img {
+  background-color: hsl(230, 49%, 56%);
+}
+.headWifi:not(img) {
+  color: hsl(230, 49%, 56%);
+}
+.definition,
+.definition h2 {
+  margin-bottom: 10px;
+}
+.wifiData div {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(37.5deg 23.53% 93.33%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.wifiData div:first-of-type {
+  margin-bottom: 5px;
+}
+.password p:nth-child(2) {
+  margin-left: auto;
+}
+.password button {
+  margin-left: 5px;
+  padding: 2px 5px;
+  border-radius: 15px;
+  border: 2px solid hsl(32, 27%, 90%) ;
+  background-color: hsl(37.5deg 57.44% 95.93%);
+}
+.wifiData div p:last-of-type {
+  color: hsl(33, 15%, 15%);
+}
+.wifiData div p:first-of-type {
+  color: hsl(33, 17%, 41%);
+}
+.password button {
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(0, 0%, 55%);
+}
+.headBreackfast img {
+  background-color: hsl(340, 48%, 52%);
+}
+.headBreackfast:not(img) {
+  color: hsl(340, 48%, 52%);
 }

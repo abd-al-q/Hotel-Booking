@@ -4,8 +4,12 @@
   padding: 0;
   margin: 0;
 }
+/* #fef4f4 */
 body {
-  background-color: hsl(30, 24%, 93%);
+  background-color: hsl(33, 65%, 97%);
+}
+.whiteSpace {
+  white-space: pre-wrap;
 }
 nav {
   margin-bottom: 15px;
@@ -21,7 +25,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.sun svg {
+.sun img {
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
 }
 .sun p i {
@@ -49,7 +55,8 @@ nav {
 }
 .head p,
 .in p,
-.out p {
+.out p,
+.footProduct p {
   font-size: 12px;
   font-weight: 600;
   color: hsl(0, 0%, 55%);
@@ -77,15 +84,18 @@ nav {
   background-color: hsl(33, 15%, 15%);
   border: 1.5px solid hsl(33, 15%, 15%);
 }
-.welcomeCard,
+.welcomeCard ,
 .productCard {
-  margin: 50px 20px;
-  padding: 30px;
-  border-radius: 20px;
+  width: calc(275px + 60px);
 }
 .welcomeCard {
+  margin: 50px 20px 0 20px;
+  padding: 30px;
+  border-radius: 20px;
+  z-index: 2;
   color: #ffffff;
-  box-shadow: 0 3px 5px hsl(18,62%, 47%);
+  position: relative;
+  box-shadow: 0 28px 40px -7px hsl(22deg 63.52% 76.26%);  
   background: linear-gradient(230deg, hsl(22, 72%, 56%) 0%, hsl(18,62%, 47%) 20%, hsl(15, 74%, 41%) 40%, hsl(15, 69%, 37%) 100%);
   transform: rotateZ(2deg);
 }
@@ -117,15 +127,22 @@ h3 i {
   margin-bottom: 10px;
 }
 .productCard {
+  margin: 20px 20px 50px 20px;
   color: black;
-  background-color: white;
+  background-color: hsl(40, 60%, 98%);
   transform: rotateZ(-2deg);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px -10px #b5afaf;
 }
-.productCard .head {
+.productCard .headProduct {
   border-bottom: 1px dashed hsl(29, 27%, 85%); ;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+}
+.headProduct {
+  margin: 0;
 }
 .p-product {
   margin-bottom: 5px;
@@ -152,9 +169,62 @@ h3 i {
   display: flex;
   justify-content: space-between;
 }
-.productPrice {
+.productPrice,
+.footProduct h2 {
   direction: rtl;
 }
 .solds p {
   margin-top: 10px;
+}
+.footProduct {
+  margin-top: 20px;
+  height: 100px;
+}
+.footProduct div {
+  display: flex;
+  justify-content: space-between;
+  line-height: 47px;
+}
+.footProduct div :first-of-type {
+  margin-bottom: 10px;
+}
+.footProduct p {
+  display: flex;
+  margin-right: 30px;
+}
+.footProduct p:first-of-type {
+  font-size: 13px;
+} 
+.feature {
+  width: 345;
+  margin: 15px;
+  margin-top: 0;
+  padding: 20px 15px;
+  background-color: hsl(40, 60%, 98%);
+  border: 1.5px solid hsl(29, 27%, 85%);
+  border-radius: 15px;
+  box-shadow: 0 6px 25px -14px #b5afaf;
+}
+.headArrival {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.headArrival:not(img) {
+  color: hsl(15, 74%, 41%);
+}
+.headArrival h2 {
+  margin-left: auto;
+}
+.headArrival img {
+  padding: 5px;
+  border-radius: 7.5px;
+  margin-right: 10px;
+  background-color: hsl(15, 74%, 41%);
+}
+.date {
+  margin-bottom: 15px;
+}
+.date h2 {
+  margin-bottom: 5px;
 }

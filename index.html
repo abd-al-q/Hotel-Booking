@@ -1,171 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel booking confirmation page</title>
-  <link rel="stylesheet" href="./CSS/index.css">
-</head>
-<body>
-  <nav>
-    <div class="sun">
-    <img src="./images/illustration-sun.svg" alt="">
-    <p><i>Maison</i><br>Soleil</p>
-    </div>
-    <div class="menu-icons">
-      <img class="svg-menu" src="./images/icon-menu.svg" alt="">
-      <img class="close" src="./images/icon-close.svg" alt="">
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel booking confirmation page</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
 
-  <div class="menu">
-    
-  </div>
-  
-  <div class="head">
-    <p class="whiteSpace">BOOKING    .    CONFIRMED</p>
-    <h1>Bienvenue, <i>Lucia</i></h1>
-    <div class="buttons">
-      <button>Print receipt</button>
-      <button>Add to calendar</button>
-    </div>
-  </div>
-  
-  <div class="welcomeCard">
-    <div class="mainWelcome">
-      <div class="sunDiv">
-        <p>WELCOME CARD</p>
-        <img src="./images/icon-sun.svg" alt="">
+  <body>
+    <nav>
+      <div class="sun">
+        <img src="./images/illustration-sun.svg" alt="" />
+        <p><i>Maison</i><br />Soleil</p>
+      </div>
+      <div class="menu-icons">
+        <img class="svg-menu" src="./images/icon-menu.svg" alt="" />
+        <img class="close" src="./images/icon-close.svg" alt="" />
+      </div>
+    </nav>
+
+    <div class="menu">
+      <div class="top-menu">
+        <nav>
+          <div class="sun">
+            <img src="./images/illustration-sun.svg" alt="" />
+            <p><i>Maison</i><br />Soleil</p>
+          </div>
+          <div class="menu-icons">
+            <img class="svg-menu" src="./images/icon-menu.svg" alt="" />
+            <img class="close" src="./images/icon-close.svg" alt="" />
+          </div>
+        </nav>
+
+        <ul class="ul-menu">
+          <li>
+            <img src="./images/icon-bed.svg" alt="" />
+            <p>Your stay</p>
+            <p class="notice">1</p>
+          </li>
+          <li>
+            <img src="./images/icon-house.svg" alt="" />
+            <p>The house</p>
+          </li>
+          <li>
+            <img src="./images/icon-pin.svg" alt="" />
+            <p>Around town</p>
+          </li>
+          <li>
+            <img src="./images/icon-breakfast-outline.svg" alt="" />
+            <p>Breakfast</p>
+          </li>
+          <li>
+            <img src="./images/icon-mail.svg" alt="" />
+            <p>Massages</p>
+          </li>
+        </ul>
       </div>
 
-      <h3><i>A note from your host</i></h3>
-      <h1><i>Margaux</i></h1>
-      <p class="p-main">we're so glad you're coming. Tge shutters will be open, the lemonade cold, and the cat - poivre - pretending not to notice you.</p>
+      <div class="bottom-menu">
+        <div class="weather">
+          <img src="./images/icon-weather.svg" alt="" />
+          <p>TODAY IN CASSIS</p>
+          <h2>27<sup>O</sup></h2>
+          <p class="span">Suuny <span>.</span> light breeze</p>
+        </div>
+
+        <div class="info">
+          <p>EST. 1987</p>
+          <p>MAISON SOLEIL . 12 RUE DES OLIVIERS . CASSIS</p>
+          <p>e 2026 MAISON SOLEIL</p>
+        </div>
+      </div>
     </div>
-    
-    <div class="footWelcome">
-      <p>ROOM</p>
-      <h3>La Garrigue</h3>
-    </div>
-  </div>
-                <!--start of product card-->
-  <div class="productCard">
-    <div class="head headProduct">
+
+    <div class="head">
       <div>
-        <p>RECEIPT</p>
-        <h3>Your stay</h3>
+        <p class="whiteSpace">BOOKING . CONFIRMED</p>
+        <h1>Bienvenue, <i>Lucia</i></h1>
       </div>
-
-      <div>
-        <p class="p-product">N:  MS-2020</p>
-        <p>0421-AH</p>
-      </div>
-    </div>
-
-    <div class="mainProduct">
-      <div class="in-out">
-        <div class="in">
-          <p>CHECK IN</p>
-          <h1>25 Apr</h1>
-          <p>Saturday - 15:00</p>
-        </div>
-        
-        <div class="out">
-          <p>CHECK OUT</p>
-          <h1>29 Apr</h1>
-          <p>Wednesday - 11:00</p>
-        </div>
-      </div>
-      <div class="solds">
-        <div class="productName">
-          <p>Room . La Garrigue × 4 nights</p>
-          <p>Break fast × 2 guests</p>
-          <p>Tourist tax</p>
-        </div>
-
-        <div class="productPrice">
-          <p>620.00 €</p>
-          <p>96.00 €</p>
-          <p>14.40 €</p>
-        </div>
+      <div class="buttons">
+        <button>Print receipt</button>
+        <button>Add to calendar</button>
       </div>
     </div>
+                    <!--start of welcome card-->
+    <div class="cards">
+      <div class="welcomeCard">
+        <div class="mainWelcome">
+          <div class="sunDiv">
+            <p>WELCOME CARD</p>
+            <img src="./images/icon-sun.svg" alt="" />
+          </div>
 
-    <div class="footProduct">
-        <div>
-          <p>TOTAL PAID</p>
-          <h2>730.40 €</h2>
+          <h3><i>A note from your host</i></h3>
+          <h1><i>Margaux</i></h1>
+          <p class="p-main">
+            we're so glad you're coming. Tge shutters will be open, the lemonade
+            cold, and the cat - poivre - pretending not to notice you.
+          </p>
         </div>
 
-        <div>
-          <p class="whiteSpace">PAID    .    WISE    .    GBP</p>
-          <img src="./images/icon-barcode.svg" alt="">
+        <div class="footWelcome">
+          <p>ROOM</p>
+          <h3>La Garrigue</h3>
         </div>
-    </div>
-  </div>
-                <!--start of arrival feature-->
-  <div class="arrival feature">
-    <div class="headArrival headFeature">
-      <img src="./images/icon-key.svg" alt="">
-      <p>ARRIAL</p>
-      <h2>01</h2>
-    </div>
+      </div>
+      <!--start of product card-->
+      <div class="productCard">
+        <div class="head headProduct">
+          <div>
+            <p>RECEIPT</p>
+            <h3>Your stay</h3>
+          </div>
 
-    <div class="date div2">
-      <h2>Check-in from 15:00</h2>
-      <p>Sat, 25 April</p>
-    </div>
+          <div>
+            <p class="p-product">N: MS-2020</p>
+            <p>0421-AH</p>
+          </div>
+        </div>
 
-    <p>
-      Ring the brass bell by the blue door. If we're at
-      the market, the key is in the terracotta pot by
-      the olive tree.
-    </p>
-  </div>
-                <!--start of wifi feature-->
-  <div class="wifi feature">
-    <div class="headWifi headFeature">
-      <img src="./images/icon-wifi.svg" alt="">
-      <p>WIFI</p>
-      <h2>02</h2>
-    </div>
+        <div class="mainProduct">
+          <div class="in-out">
+            <div class="in">
+              <p>CHECK IN</p>
+              <h1>25 Apr</h1>
+              <p>Saturday - 15:00</p>
+            </div>
 
-    <div class="definition div2">
-      <h2>Le Soleil <span>.</span> Guest</h2>
-      <p>Password below</p>
-    </div>
+            <div class="out">
+              <p>CHECK OUT</p>
+              <h1>29 Apr</h1>
+              <p>Wednesday - 11:00</p>
+            </div>
+          </div>
+          <div class="solds">
+            <div class="productName">
+              <p>Room . La Garrigue × 4 nights</p>
+              <p>Break fast × 2 guests</p>
+              <p>Tourist tax</p>
+            </div>
 
-    <div class="wifiData">
-      <div class="network">
-        <p>NETWORK</p>
-        <p>Le Soleil <span>.</span> Guest</p>
+            <div class="productPrice">
+              <p>620.00 €</p>
+              <p>96.00 €</p>
+              <p>14.40 €</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footProduct">
+          <div>
+            <p>TOTAL PAID</p>
+            <h2>730.40 €</h2>
+          </div>
+
+          <div>
+            <p class="whiteSpace">PAID . WISE . GBP</p>
+            <img src="./images/icon-barcode.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--start of arrival feature-->
+    <div class="arrival feature">
+      <div class="headArrival headFeature">
+        <img src="./images/icon-key.svg" alt="" />
+        <p>ARRIAL</p>
+        <h2>01</h2>
       </div>
 
-      <div class="password">
-        <p>PASSWORD</p>
-        <p>soleil-2026</p>
-        <button>COPY</button>
+      <div class="date div2">
+        <h2>Check-in from 15:00</h2>
+        <p>Sat, 25 April</p>
+      </div>
+
+      <p>
+        Ring the brass bell by the blue door. If we're at the market, the key is
+        in the terracotta pot by the olive tree.
+      </p>
+    </div>
+    <!--start of wifi feature-->
+    <div class="wifi feature">
+      <div class="headWifi headFeature">
+        <img src="./images/icon-wifi.svg" alt="" />
+        <p>WIFI</p>
+        <h2>02</h2>
+      </div>
+
+      <div class="definition div2">
+        <h2 class="span">Le Soleil <span>.</span> Guest</h2>
+        <p>Password below</p>
+      </div>
+
+      <div class="wifiData">
+        <div class="network">
+          <p>NETWORK</p>
+          <p class="span">Le Soleil <span>.</span> Guest</p>
+        </div>
+
+        <div class="password">
+          <p>PASSWORD</p>
+          <p>soleil-2026</p>
+          <button>COPY</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="breackfast feature">
-    <div class="headBreackfast headFeature">
-      <img src="./images/icon-breakfast.svg" alt="">
-      <p>BREAKFAST</p>
-      <h2>03</h2>
+    <div class="breackfast feature">
+      <div class="headBreackfast headFeature">
+        <img src="./images/icon-breakfast.svg" alt="" />
+        <p>BREAKFAST</p>
+        <h2>03</h2>
+      </div>
+
+      <div class="date div2">
+        <h2>Served 8-10:30</h2>
+        <p>On the terrace</p>
+      </div>
+
+      <p>
+        Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free
+        option? Leave a note the night before.
+      </p>
     </div>
-
-    <div class="date div2">
-      <h2>Served 8-10:30</h2>
-      <p>On the terrace</p>
-    </div>
-
-    <p>
-      Fresh figs, Marseille honey, pain au levain, and
-      espresso. Gluten-free option? Leave a note the
-      night before.
-    </p>
-  </div>
-</body>
+  </body>
 </html>
